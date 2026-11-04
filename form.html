@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+</head>
+<body>
+    <form action="./form2.html" target="_blank">
+        <table>
+            <tr>
+                <td><label for="username">Name:</label></td>
+                <td><input type="text" id="username" name="username" placeholder="enter your name" required></td>
+            </tr>    
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" placeholder="enter your email id" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" placeholder="password" required minlength="8" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" name="age" id="age" placeholder="enter age" required min="15" max="35"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Enter DOB</label></td>
+                <td><input type="date" name="date" id="date" placeholder="enter dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="resume">Upload resume</label></td>
+                <td><input type="file" name="resume" id="resume" required></td>
+            </tr> 
+            <tr>
+                <td><label for="gender">Select Gender</label> </td>
+                <td><input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                <input type="radio" name="gender" id="other" disabled><label for="other">Other</label></td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Select hobbies</label></td>
+                <td><input type="checkbox" name="reading" id="reading" disabled><label for="reading">Reading</label>
+                <input type="checkbox" name="singing" id="singing"><label for="singing">Singing</label>
+                <input type="checkbox" name="dancing" id="dancing"><label for="dancing">Dancing</label>
+                <input type="checkbox" name="playing" id="playing" checked><label for="playing">Playing</label></td>
+            </tr>
+            <tr>
+                <td><label for="city">Select city</label></td>
+                <td><select name="city" id="city" size="4" multiple>
+                    <option>Delhi</option>
+                    <option>Chandigarh</option>
+                    <option>Sirsa</option>
+                    <option>Bathinda</option>
+                </select></td>
+            </tr>
+            <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <tr>
+                <td> <button type="reset">Reset</button></td>
+                <td><button type="submit">Submit</button></td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
